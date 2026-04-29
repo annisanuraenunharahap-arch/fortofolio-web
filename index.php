@@ -1,6 +1,6 @@
 <?php 
 // Koneksi Database
-include 'db.php'; 
+include('koneksi.php');
 
 // Ambil data profil
 $query_profile = mysqli_query($conn, "SELECT * FROM profile_data LIMIT 1");
