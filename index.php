@@ -1,12 +1,10 @@
 <?php 
-// 1. Koneksi Database
+// Koneksi Database
 include 'db.php'; 
 
-// 2. Ambil data profil
+// Ambil data profil
 $query_profile = mysqli_query($conn, "SELECT * FROM profile_data LIMIT 1");
 $profile = mysqli_fetch_assoc($query_profile);
-
-// Gunakan nilai default jika data database kosong
 $nama = $profile['full_name'] ?? 'Annisa Nuraenun Harahap';
 $status = $profile['status'] ?? 'Informatics Engineering Student - Universitas Muhammadiyah Sukabumi';
 $email = $profile['email'] ?? 'annisanuraenunharahap@gmail.com';
