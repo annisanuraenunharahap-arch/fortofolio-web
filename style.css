@@ -39,7 +39,7 @@ h1 { font-size: 3rem; margin-bottom: 10px; }
     padding: 12px 25px;
     background-color: #172a53;
     color: white;
-    border: 2px solid #3dfcbb;
+    border: 2px solid #111e8f;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
@@ -47,7 +47,7 @@ h1 { font-size: 3rem; margin-bottom: 10px; }
 }
 
 .tab-btn:hover, .tab-btn.active {
-    background-color: #3dfcbb;
+    background-color: #111e8f;
     color: #0d1a33;
 }
 
@@ -75,6 +75,19 @@ h1 { font-size: 3rem; margin-bottom: 10px; }
     border: 2px solid transparent; 
     aspect-ratio: 4 / 5; 
     width: 100%;
+}
+
+#partof-content .gallery-item {
+    aspect-ratio: 9 / 16;
+    overflow: hidden; 
+    position: relative;
+}
+
+#partof-content .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
 
 .gallery-item img { 
